@@ -26,6 +26,7 @@ Projeto desenvolvido para fins **acadêmicos**, aplicando conceitos de:
 
 ## 🗂️ Estrutura do Projeto
 
+```
 SpiderSwing/
 │
 ├── assets/
@@ -58,57 +59,83 @@ SpiderSwing/
 ├── main.py
 ├── .gitignore
 └── README.md
+```
 
+---
 
-▶️ Como Executar o Jogo
+## ▶️ Como Executar o Jogo
 
-1️⃣ Clonar o repositório
+### 1️⃣ Clonar o repositório
 
+```
 git clone https://github.com/Adison13/SpiderSwing.git
 cd SpiderSwing
+```
 
-2️⃣ Criar e ativar o ambiente virtual
+---
 
+### 2️⃣ Criar e ativar o ambiente virtual
+
+```
 python -m venv .venv
+```
 
 Ativar no Windows (PowerShell):
 
+```
 .\.venv\Scripts\Activate.ps1
+```
 
 Se o PowerShell bloquear a ativação:
 
+```
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
 
-3️⃣ Instalar dependências
+---
 
+### 3️⃣ Instalar dependências
+
+```
 pip install pygame
-Obs: o projeto utiliza apenas Pygame.
+```
 
-4️⃣ Executar o jogo
+---
 
+### 4️⃣ Executar o jogo
+
+```
 python main.py
+```
 
-🏆 Ranking
-O ranking salva automaticamente os Top 10 jogadores
-As pontuações são armazenadas no arquivo:
+---
 
+## 🏆 Ranking
+
+- O ranking salva automaticamente os **Top 10 jogadores**
+- As pontuações são armazenadas no arquivo:
+
+```
 data/scores.json
+```
 
-O ranking é ordenado da maior para a menor pontuação
+- O ranking é ordenado da **maior para a menor pontuação**
 
-👨‍💻 Autores
-Adison de Oliveira
+---
 
-Matteo Souza
+## 👨‍💻 Autores
 
-Matheus Borges
+- **Adison de Oliveira**
+- **Matteo Souza**
+- **Matheus Borges**
 
-Curso: Análise e Desenvolvimento de Sistemas
-Projeto acadêmico desenvolvido em Python.
+Curso: **Análise e Desenvolvimento de Sistemas**  
+Projeto acadêmico desenvolvido em **Python**.
 
-📚 Tecnologias Utilizadas
-*Python 3.x
-*Pygame
-*Git & GitHub
+---
 
+## 📚 Tecnologias Utilizadas
 
+- Python 3.x
+- Pygame
+- Git & GitHub
