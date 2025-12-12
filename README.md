@@ -26,7 +26,6 @@ Projeto desenvolvido para fins **acadêmicos**, aplicando conceitos de:
 
 ## 🗂️ Estrutura do Projeto
 
-```text
 SpiderSwing/
 │
 ├── assets/
@@ -59,44 +58,42 @@ SpiderSwing/
 ├── main.py
 ├── .gitignore
 └── README.md
+
+
 ▶️ Como Executar o Jogo
+
 1️⃣ Clonar o repositório
-bash
-Copiar código
+
 git clone https://github.com/Adison13/SpiderSwing.git
 cd SpiderSwing
+
 2️⃣ Criar e ativar o ambiente virtual
-bash
-Copiar código
+
 python -m venv .venv
+
 Ativar no Windows (PowerShell):
 
-powershell
-Copiar código
 .\.venv\Scripts\Activate.ps1
+
 Se o PowerShell bloquear a ativação:
 
-powershell
-Copiar código
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
 3️⃣ Instalar dependências
-bash
-Copiar código
+
 pip install pygame
 Obs: o projeto utiliza apenas Pygame.
 
 4️⃣ Executar o jogo
-bash
-Copiar código
+
 python main.py
+
 🏆 Ranking
 O ranking salva automaticamente os Top 10 jogadores
-
 As pontuações são armazenadas no arquivo:
 
-text
-Copiar código
 data/scores.json
+
 O ranking é ordenado da maior para a menor pontuação
 
 👨‍💻 Autores
@@ -110,10 +107,8 @@ Curso: Análise e Desenvolvimento de Sistemas
 Projeto acadêmico desenvolvido em Python.
 
 📚 Tecnologias Utilizadas
-Python 3.x
-
-Pygame
-
-Git & GitHub
+*Python 3.x
+*Pygame
+*Git & GitHub
 
 
