@@ -1,84 +1,80 @@
 # 🕷️ SpiderSwing
 
-SpiderSwing é um jogo 2D desenvolvido em **Python com Pygame**, inspirado em jogos de desvio de obstáculos como *Flappy Bird*.  
-O jogador controla uma aranha que deve desviar dos obstáculos e alcançar a maior pontuação possível.
+SpiderSwing é um jogo 2D desenvolvido em **Python com Pygame**, inspirado em mecânicas simples de sobrevivência e reflexo.
+O jogador controla uma aranha que deve se movimentar e desviar de obstáculos em um cenário de caverna, acumulando pontuação.
+Ao final da partida, o jogador pode salvar seu nome no **ranking Top 10**.
+
+Projeto desenvolvido para fins **acadêmicos**, aplicando conceitos de:
+- Estrutura de dados
+- Organização de código
+- Persistência de dados
+- Interface gráfica com Pygame
 
 ---
 
-## 🎯 Objetivo do Jogo
-- Controlar a aranha
-- Desviar dos obstáculos da caverna
-- Acumular pontos
-- Salvar o nome e a pontuação no ranking ao perder
+## 🎮 Funcionalidades
+
+- Menu inicial interativo (Play, Ranking, Quit)
+- Jogabilidade com pontuação em tempo real
+- Tela de Game Over com inserção de nome
+- Ranking Top 10 persistente (salvo em arquivo JSON)
+- Cenário em pixel art
+- Sprites personalizados
+- Estrutura modular do projeto
 
 ---
 
-## 🎮 Controles
-- **ESPAÇO** → Pular / mover a aranha
-- **Mouse** → Navegar pelos botões do menu
-- **ENTER** → Salvar nome no ranking
-- **BACKSPACE** → Apagar letras no nome
-- **ESC** → Voltar ao menu (na tela de ranking)
+## 🗂️ Estrutura do Projeto
 
----
-
-## 🧱 Estrutura do Projeto
-O projeto foi organizado utilizando **Programação Orientada a Objetos (POO)** e separação de responsabilidades:
-
+```text
 SpiderSwing/
 │
-├── assets/ → Imagens do jogo (menu, player, obstáculos, fundo)
+├── assets/
+│   └── images/
+│       ├── cave_far.png
+│       ├── cave_near.png
+│       ├── menu.png
+│       ├── gameover.png
+│       ├── ranking.png
+│       ├── spider_player.png
+│       └── obstacles/
+│           ├── rock_tile.png
+│           ├── stalactite_cap.png
+│           └── stalagmite_cap.png
 │
-├── entities/ → Entidades do jogo
-│ ├── spider.py → Lógica da aranha (player)
-│ └── obstacle.py → Lógica dos obstáculos
+├── data/
+│   ├── scores.json
+│   └── storage.py
 │
-├── ui/ → Telas do jogo
-│ └── screens.py → Menu, Game Over e Ranking
+├── entities/
+│   ├── spider.py
+│   └── obstacle.py
 │
-├── structures/ → Estruturas de dados
-│ └── avl.py → Árvore AVL usada no ranking
+├── structures/
+│   └── avl.py
 │
-├── data/ → Armazenamento de dados
-│ ├── scores.json → Ranking salvo localmente
-│ └── storage.py → Manipulação dos dados
+├── ui/
+│   └── screens.py
 │
-├── main.py → Arquivo principal do jogo
-├── requirements.txt → Dependências do projeto
-└── README.md → Documentação
-
-yaml
+├── main.py
+├── .gitignore
+└── README.md
+▶️ Como Executar o Jogo
+1️⃣ Clonar o repositório
+bash
 Copiar código
-
----
-
-## 🧠 Conceitos Utilizados
-- Programação Orientada a Objetos (POO)
-- Estrutura de dados (Árvore AVL)
-- Manipulação de arquivos JSON
-- Loop de jogo com Pygame
-- Interface gráfica em pixel art
-
----
-
-## ⚙️ Requisitos
-- Python **3.10 ou superior**
-- Biblioteca **Pygame**
-
----
-
-## ▶️ Como Executar o Jogo
-
-### 1️⃣ Clonar o repositório
-```bash
 git clone https://github.com/Adison13/SpiderSwing.git
 cd SpiderSwing
 2️⃣ Criar e ativar o ambiente virtual
 bash
 Copiar código
 python -m venv .venv
+Ativar no Windows (PowerShell):
+
+powershell
+Copiar código
 .\.venv\Scripts\Activate.ps1
-Se o PowerShell bloquear:
+Se o PowerShell bloquear a ativação:
 
 powershell
 Copiar código
@@ -86,20 +82,38 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 3️⃣ Instalar dependências
 bash
 Copiar código
-pip install -r requirements.txt
+pip install pygame
+Obs: o projeto utiliza apenas Pygame.
+
 4️⃣ Executar o jogo
 bash
 Copiar código
 python main.py
-💾 Ranking
-As pontuações são salvas automaticamente no arquivo:
+🏆 Ranking
+O ranking salva automaticamente os Top 10 jogadores
 
-bash
+As pontuações são armazenadas no arquivo:
+
+text
 Copiar código
 data/scores.json
-O ranking exibe os Top 10 jogadores, ordenados pela maior pontuação.
+O ranking é ordenado da maior para a menor pontuação
 
 👨‍💻 Autores
-Adison de Oliveira, Matteo Souza, Matheus Borges
+Adison de Oliveira
+
+Matteo Souza
+
+Matheus Borges
+
 Curso: Análise e Desenvolvimento de Sistemas
 Projeto acadêmico desenvolvido em Python.
+
+📚 Tecnologias Utilizadas
+Python 3.x
+
+Pygame
+
+Git & GitHub
+
+
